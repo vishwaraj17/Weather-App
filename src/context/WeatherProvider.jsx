@@ -68,7 +68,7 @@ const WeatherProvider = ({ children }) => {
     setIsError(false);
     try {
       const response = await fetch(
-        `https://api.weatherapi.com/v1/forecast.json?key=${import.meta.env.VITE_API_URL}&q=${city}&days=3&aqi=yes&alerts=no`
+        `https://api.weatherapi.com/v1/forecast.json?key=5eec4f4a41db41c685f125012241812&q=${city}&days=3&aqi=yes&alerts=no`
       );
       const data = await response.json();
       setWeather({
